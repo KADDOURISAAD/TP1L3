@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style pour le tableau du bulletin */
+.bulletin-table {
+    margin-top: 30px;
+}
+
+.bulletin-table th, .bulletin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.bulletin-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.bulletin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.bulletin-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Ajouter des bordures intérieures pour le tableau du bulletin */
+.bulletin-table td {
+    border-right: 2px solid #ddd;
+}
+
+.bulletin-table td:last-child {
+    border-right: none;
+}
+
+/* Responsive design pour le tableau du bulletin sur de petits écrans */
+@media only screen and (max-width: 600px) {
+    .bulletin-table {
+        margin-top: 20px;
+    }
+
+    .bulletin-table th, .bulletin-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bulletin-table td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    .bulletin-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 5%;
+        width: 45%;
+        padding-right: 10px;
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,148 @@
+/* Style général du formulaire */
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    color: #24292e; /* Couleur du texte principal */
+}
+
+/* Style du titre */
+h1 {
+    font-size: 28px;
+    color: #0366d6; /* Couleur principale (liens, boutons, etc.) */
+    margin-bottom: 20px;
+}
+
+/* Style des étiquettes (labels) */
+label {
+    font-size: 16px;
+    color: #24292e;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Style des champs de texte et des boutons */
+input[type="text"], select, input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Style des cases à cocher (checkbox) */
+input[type="checkbox"] {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Style des boutons radio (radio) */
+input[type="radio"] {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Style des champs en lecture seule */
+input[readonly] {
+    background-color: #f6f8fa; /* Couleur de fond en lecture seule */
+    cursor: not-allowed;
+}
+
+/* Style des boutons */
+input[type="submit"] {
+    background-color: #0366d6; /* Couleur principale */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+    color: #d73a49; /* Couleur d'erreur */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Style pour les messages de succès */
+.success-message {
+    color: #28a745; /* Couleur de succès */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Marge entre les éléments */
+br {
+    margin-top: 10px;
+}
+
+/* Style du conteneur des radio boutons */
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Style des sélecteurs */
+select {
+    background-color: #f6f8fa; /* Couleur de fond des sélecteurs */
+    color: #24292e;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Style pour le formulaire en lecture seule */
+.form-read-only {
+    background-color: #f6f8fa; /* Couleur de fond en lecture seule */
+    pointer-events: none;
+}
+
+/* Style pour le texte "Note non Saisie" */
+.note-not-saved {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Style des liens */
+a {
+    color: #0366d6; /* Couleur principale (liens) */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3; /* Couleur plus foncée au survol des liens */
+}
+
+/* Style pour les boutons du menu */
+.menu-button {
+    background-color: #0366d6; /* Couleur principale */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.menu-button:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+}
